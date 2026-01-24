@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Doctors - MedProfile</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html" class="logo">MedProfile</a>
+            <nav class="main-nav">
+                
+                <a href="search-doctors.html" class="active">Find a Doctor</a>
+                <a href="about.html">About</a>
+                <a href="login.html">Login</a>
+                <a href="signup.html" class="btn btn-primary">Sign Up</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="search-doctors" style="padding: 4rem 0;">
+            <div class="container">
+                <h1 style="text-align: center; margin-bottom: 3rem;">Find a Verified Doctor</h1>
+
+                <div class="card" style="margin-bottom: 3rem;">
+                    <form id="filter-form" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; align-items: flex-end;">
+                        <div class="form-group" style="margin: 0;">
+                            <label for="specialization">Specialization</label>
+                            <select id="specialization" class="form-control">
+                                <option value="">All</option>
+                                <option value="Cardiologist">Cardiologist</option>
+                                <option value="Dermatologist">Dermatologist</option>
+                                <option value="Neurologist">Neurologist</option>
+                                <option value="Pediatrician">Pediatrician</option>
+                            </select>
+                        </div>
+                        <div class="form-group" style="margin: 0;">
+                            <label for="location">Location</label>
+                            <select id="location" class="form-control">
+                                <option value="">All</option>
+                                <option value="Mumbai">Mumbai</option>
+                                <option value="Delhi">Delhi</option>
+                                <option value="Bangalore">Bangalore</option>
+                                <option value="Pune">Pune</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="doctor-list">
+                    <!-- Doctor Card 1 -->
+                    <div class="card doctor-card" data-specialization="Cardiologist" data-location="Mumbai" style="display: flex; align-items: center; justify-content: space-between;">
+                        <div style="display: flex; align-items: center;">
+                            <img src="https://placehold.co/100x100/632024/fff?text=PS" alt="Doctor Photo" style="border-radius: 50%; width: 100px; height: 100px; margin-right: 2rem;">
+                            <div>
+                                <h3 style="margin-bottom: 0.25rem;">Dr. Priya Sharma</h3>
+                                <p style="color: var(--text-light); margin: 0;">Cardiologist</p>
+                                <p>Mumbai</p>
+                            </div>
+                        </div>
+                        <a href="" class="btn btn-secondary">View Profile</a>
+                    </div>
+                    <!-- Doctor Card 2 -->
+                    <div class="card doctor-card" data-specialization="Dermatologist" data-location="Delhi" style="display: flex; align-items: center; justify-content: space-between;">
+                        <div style="display: flex; align-items: center;">
+                            <img src="https://placehold.co/100x100/632024/fff?text=RG" alt="Doctor Photo" style="border-radius: 50%; width: 100px; height: 100px; margin-right: 2rem;">
+                            <div>
+                                <h3 style="margin-bottom: 0.25rem;">Dr. Rohan Gupta</h3>
+                                <p style="color: var(--text-light); margin: 0;">Dermatologist</p>
+                                <p>Delhi</p>
+                            </div>
+                        </div>
+                        <a href="" class="btn btn-secondary">View Profile</a>
+                    </div>
+                    <!-- Doctor Card 3 -->
+                    <div class="card doctor-card" data-specialization="Neurologist" data-location="Bangalore" style="display: flex; align-items: center; justify-content: space-between;">
+                        <div style="display: flex; align-items: center;">
+                            <img src="https://placehold.co/100x100/632024/fff?text=PM" alt="Doctor Photo" style="border-radius: 50%; width: 100px; height: 100px; margin-right: 2rem;">
+                            <div>
+                                <h3 style="margin-bottom: 0.25rem;">Dr. Pooja Mehta</h3>
+                                <p style="color: var(--text-light); margin: 0;">Neurologist</p>
+                                <p>Bangalore</p>
+                            </div>
+                        </div>
+                        <a href="" class="btn btn-secondary">View Profile</a>
+                    </div>
+                    <!-- Doctor Card 4 -->
+                    <div class="card doctor-card" data-specialization="Pediatrician" data-location="Pune" style="display: flex; align-items: center; justify-content: space-between;">
+                        <div style="display: flex; align-items: center;">
+                            <img src="https://placehold.co/100x100/632024/fff?text=VS" alt="Doctor Photo" style="border-radius: 50%; width: 100px; height: 100px; margin-right: 2rem;">
+                            <div>
+                                <h3 style="margin-bottom: 0.25rem;">Dr. Vikram Singh</h3>
+                                <p style="color: var(--text-light); margin: 0;">Pediatrician</p>
+                                <p>Pune</p>
+                            </div>
+                        </div>
+                        <a href="" class="btn btn-secondary">View Profile</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2026 MedProfile. All rights reserved.</p>
+            <nav>
+                <a href="privacy-terms.html">Privacy & Terms</a>
+                <a href="about.html">About</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="js/filter.js"></script>
+</body>
+</html>

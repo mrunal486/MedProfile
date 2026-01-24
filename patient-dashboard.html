@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Dashboard - MedProfile</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html" class="logo">MedProfile</a>
+            <nav class="main-nav">
+                <a href="patient-dashboard.html" class="active">Dashboard</a>
+                <a href="patient-profile.html">Profile</a>
+                <a href="search-doctors.html">Find a Doctor</a>
+                <a href="reports-vault.html">Reports</a>
+                <a href="index.html">Logout</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="dashboard" style="padding: 4rem 0;">
+            <div class="container">
+                <h1 style="margin-bottom: 3rem;">Welcome, Mrunal!</h1>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                    
+                    <div class="card">
+                        <h3>Upcoming Appointments</h3>
+                        <p>You have no upcoming appointments.</p>
+                        <a href="search-doctors.html" class="btn btn-secondary" style="margin-top: 1rem;">Book Now</a>
+                    </div>
+
+                    <div class="card">
+                        <h3>Active Prescriptions</h3>
+                        <p>No active prescriptions found.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Recent Reports</h3>
+                        <p>No recent reports have been uploaded.</p>
+                        <a href="reports-vault.html" class="btn btn-secondary" style="margin-top: 1rem;">Upload Report</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2026 MedProfile. All rights reserved.</p>
+            <nav>
+                <a href="privacy-terms.html">Privacy & Terms</a>
+                <a href="about.html">About</a>
+            </nav>
+        </div>
+    </footer>
+
+</body>
+</html>

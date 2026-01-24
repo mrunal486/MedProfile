@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Dashboard - MedProfile</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html" class="logo">MedProfile</a>
+            <nav class="main-nav">
+                <a href="doctor-dashboard.html" class="active">Dashboard</a>
+                <a href="manage-patients.html">Manage Patients</a>
+                <a href="doctor-profile.html">Profile</a>
+                <a href="index.html">Logout</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="dashboard" style="padding: 4rem 0;">
+            <div class="container">
+                <h1 style="margin-bottom: 3rem;">Welcome, Doctor!</h1>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                    
+                    <div class="card">
+                        <h3>Today's Appointments</h3>
+                        <p>You have <strong>3</strong> appointments scheduled for today.</p>
+                        <a href="#" class="btn btn-secondary" style="margin-top: 1rem;">View Calendar</a>
+                    </div>
+
+                    <div class="card">
+                        <h3>Manage Patients</h3>
+                        <p>View and manage your patient records.</p>
+                        <a href="manage-patients.html" class="btn btn-secondary" style="margin-top: 1rem;">Go to Patient Records</a>
+                    </div>
+
+                    <div class="card">
+                        <h3>Pending Actions</h3>
+                        <p>You have <strong>2</strong> new reports to review.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2026 MedProfile. All rights reserved.</p>
+            <nav>
+                <a href="privacy-terms.html">Privacy & Terms</a>
+                <a href="about.html">About</a>
+            </nav>
+        </div>
+    </footer>
+
+</body>
+</html>

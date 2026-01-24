@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Patients - MedProfile</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html" class="logo">MedProfile</a>
+            <nav class="main-nav">
+                <a href="doctor-dashboard.html">Dashboard</a>
+                <a href="manage-patients.html" class="active">Manage Patients</a>
+                <a href="doctor-profile.html">Profile</a>
+                <a href="index.html">Logout</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="manage-patients" style="padding: 4rem 0;">
+            <div class="container">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 3rem;">
+                    <h1>Manage Patient Records</h1>
+                    <input type="search" class="form-control" placeholder="Search patients..." style="max-width: 300px;">
+                </div>
+
+                <div class="card">
+                    <table style="width: 100%; border-collapse: collapse;">
+                        <thead style="text-align: left; border-bottom: 1px solid var(--border-color);">
+                            <tr>
+                                <th style="padding: 1rem;">Patient Name</th>
+                                <th style="padding: 1rem;">Last Visit</th>
+                                <th style="padding: 1rem;">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="padding: 1rem;">Ravi Kumar</td>
+                                <td style="padding: 1rem;">Jan 20, 2026</td>
+                                <td style="padding: 1rem;">
+                                    <a href="#">View Records</a> | <a href="#">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 1rem; border-top: 1px solid var(--border-color);">Priya Singh</td>
+                                <td style="padding: 1rem; border-top: 1px solid var(--border-color);">Jan 18, 2026</td>
+                                <td style="padding: 1rem; border-top: 1px solid var(--border-color);">
+                                    <a href="#">View Records</a> | <a href="#">Edit</a>
+                                </td>
+                            </tr>
+                             <tr>
+                                <td style="padding: 1rem; border-top: 1px solid var(--border-color);">Amit Patel</td>
+                                <td style="padding: 1rem; border-top: 1px solid var(--border-color);">Jan 15, 2026</td>
+                                <td style="padding: 1rem; border-top: 1px solid var(--border-color);">
+                                    <a href="#">View Records</a> | <a href="#">Edit</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2026 MedProfile. All rights reserved.</p>
+            <nav>
+                <a href="privacy-terms.html">Privacy & Terms</a>
+                <a href="about.html">About</a>
+            </nav>
+        </div>
+    </footer>
+
+</body>
+</html>

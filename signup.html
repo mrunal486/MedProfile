@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - MedProfile</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html" class="logo">MedProfile</a>
+            <nav class="main-nav">
+                
+                <a href="search-doctors.html">Find a Doctor</a>
+                <a href="about.html">About</a>
+                <a href="login.html">Login</a>
+                <a href="signup.html" class="btn btn-primary active">Sign Up</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="signup-form" style="padding: 4rem 0;">
+            <div class="container" style="max-width: 550px;">
+                <div class="card">
+                    <h1 style="text-align: center; margin-bottom: 2rem;">Create Your Account</h1>
+                    <form id="signupForm">
+                        <div class="form-group">
+                            <label for="role">I am a...</label>
+                            <select id="role" class="form-control">
+                                <option value="patient">Patient</option>
+                                <option value="doctor">Doctor</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" id="fullName" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Create Password</label>
+                            <input type="password" id="password" class="form-control" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1rem;">Create Account</button>
+                    </form>
+                    <p style="text-align: center; margin-top: 1.5rem; color: var(--text-light);">
+                        Already have an account? <a href="login.html">Login</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2026 MedProfile. All rights reserved.</p>
+            <nav>
+                <a href="privacy-terms.html">Privacy & Terms</a>
+                <a href="about.html">About</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="js/auth.js"></script>
+</body>
+</html>

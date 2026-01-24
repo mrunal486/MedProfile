@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Profile - MedProfile</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html" class="logo">MedProfile</a>
+            <nav class="main-nav">
+                <a href="doctor-dashboard.html">Dashboard</a>
+                <a href="manage-patients.html">Manage Patients</a>
+                <a href="doctor-profile.html" class="active">Profile</a>
+                <a href="index.html">Logout</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="profile" style="padding: 4rem 0;">
+            <div class="container">
+                <div class="card">
+                    <div style="display: flex; align-items: center; margin-bottom: 2rem;">
+                        <img src="https://placehold.co/100x100/632024/fff?text=PS" alt="Doctor Photo" style="border-radius: 50%; width: 150px; height: 150px; margin-right: 2rem;">
+                        <div>
+                            <h1 style="margin-bottom: 0.5rem;">Dr. Priya Sharma</h1>
+                            <p style="color: var(--text-light); font-size: 1.1rem;">Cardiologist</p>
+                            <p><strong>Affiliated Hospital:</strong> City General Hospital</p>
+                            <a href="#" class="btn btn-secondary" style="margin-top: 1rem;">Edit Profile</a>
+                        </div>
+                    </div>
+
+                    <div style="border-top: 1px solid var(--border-color); padding-top: 2rem; margin-bottom: 2rem;">
+                        <h2>Qualifications</h2>
+                        <ul style="padding-left: 20px;">
+                            <li>MD, AIIMS Delhi</li>
+                            <li>Board Certified in Cardiology</li>
+                            <li>15+ Years of Experience</li>
+                        </ul>
+                    </div>
+
+                    <div style="border-top: 1px solid var(--border-color); padding-top: 2rem;">
+                        <h2>Patient Reviews</h2>
+                        <div class="review" style="margin-bottom: 1.5rem;">
+                            <p>"Dr. Sharma is an excellent and caring doctor. Highly recommended."</p>
+                            <small>- Verified Patient</small>
+                        </div>
+                         <div class="review">
+                            <p>"Very thorough and professional."</p>
+                            <small>- Verified Patient</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2026 MedProfile. All rights reserved.</p>
+            <nav>
+                <a href="privacy-terms.html">Privacy & Terms</a>
+                <a href="about.html">About</a>
+            </nav>
+        </div>
+    </footer>
+
+</body>
+</html>
